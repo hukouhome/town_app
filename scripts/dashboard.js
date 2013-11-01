@@ -3,7 +3,7 @@ var nid; // global node id variable
 $('#page_dashboard').live('pageshow',function(){
   try {
     $.ajax({
-      url: "http://dev-phone.gotpantheon.com/?q=phone_service/system/connect.json",
+      url: "http://dev-phone.gotpantheon.com/phone_service/system/connect.json",
       type: 'post',
       dataType: 'json',
       error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -34,7 +34,7 @@ $('#page_dashboard').live('pageshow',function(){
 $('#button_logout').live("click",function(){
 try {
  $.ajax({
-     url: "http://dev-phone.gotpantheon.com/?q=phone_service/user/logout.json",
+     url: "http://dev-phone.gotpantheon.com/phone_service/user/logout.json",
      type: 'post',
      dataType: 'json',
      error: function (XMLHttpRequest, textStatus, errorThrown) {

@@ -8,7 +8,7 @@ $('#page_node_create_submit').live('click',function(){
 
   // 开始：Drupal Services 创建内容（警告：没有设置SSL请不要使用https)
   $.ajax({
-      url: "http://dev-phone.gotpantheon.com/?q=phone_service/node.json",
+      url: "http://dev-phone.gotpantheon.com/phone_service/node.json",
       type: 'post',
       data: 'node[type]=page&node[title]=' + encodeURIComponent(title) + '&node[language]=und&node[body][und][0][value]=' + encodeURIComponent(body),
       dataType: 'json',

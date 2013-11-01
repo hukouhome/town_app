@@ -6,7 +6,7 @@ $('#page_login_submit').live('click',function(){
   
   // 开始：Drupal Services 用户登录（警告：没有设置SSL请不要使用https)
   $.ajax({
-      url: "http://dev-phone.gotpantheon.com/?q=phone_service/user/login.json",
+      url: "http://dev-phone.gotpantheon.com/phone_service/user/login.json",
       type: 'post',
       data: 'username=' + encodeURIComponent(name) + '&password=' + encodeURIComponent(pass),
       dataType: 'json',

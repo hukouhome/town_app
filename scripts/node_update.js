@@ -1,7 +1,7 @@
 $('#page_node_update').live('pageshow',function(){
   try {
     $.ajax({
-      url: "http://dev-phone.gotpantheon.com/?q=phone_service/node/" + encodeURIComponent(nid) + ".json",
+      url: "http://dev-phone.gotpantheon.com/phone_service/node/" + encodeURIComponent(nid) + ".json",
       type: 'get',
       dataType: 'json',
       error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -29,7 +29,7 @@ $('#page_node_update_submit').live('click',function(){
   if (!body) { alert('输入内容'); return false; }
 
   $.ajax({
-      url: "http://dev-phone.gotpantheon.com/?q=phone_service/node/" + encodeURIComponent(nid) + ".json",
+      url: "http://dev-phone.gotpantheon.com/phone_service/node/" + encodeURIComponent(nid) + ".json",
       type: 'put',
       data: 'node[type]=page&node[title]=' + encodeURIComponent(title) + '&node[language]=und&node[body][und][0][value]=' + encodeURIComponent(body),
       dataType: 'json',

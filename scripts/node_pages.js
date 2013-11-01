@@ -1,7 +1,7 @@
 $('#page_node_pages').live('pageshow',function(){
   try {
     $.ajax({
-      url: "http://dev-phone.gotpantheon.com/?q=phone_app",
+      url: "http://dev-phone.gotpantheon.com/phone_app",
       type: 'get',
       dataType: 'json',
       error: function (XMLHttpRequest, textStatus, errorThrown) {
